@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRK CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">        
+       <div class="calcbox"> 
+           <h1>•CRKR AMONG US CALCULATOR•</h1>                     
+        <input type="text" id="inputnum" placeholder="0" readonly>
+        
+        <button onclick="clearInput()" class="sign1">C</button>
+        <button onclick="deleteInput()" class="sign1">DEL</button>
+        <button onclick="numberInput('%')" class="sign1">%</button>
+        <button onclick="numberInput('/')" class="sign">/</button>
+        <button onclick="numberInput('7')">7</button>
+        <button onclick="numberInput('8')">8</button>
+        <button onclick="numberInput('9')">9</button>
+        <button onclick="numberInput('*')" class="sign">x</button>
+        <button onclick="numberInput('4')">4</button>
+        <button onclick="numberInput('5')">5</button>
+        <button onclick="numberInput('6')">6</button>
+        <button onclick="numberInput('-')" class="sign">-</button>
+        <button onclick="numberInput('1')">1</button>
+        <button onclick="numberInput('2')">2</button>
+        <button onclick="numberInput('3')">3</button>
+        <button onclick="numberInput('+')" class="sign">+</button>
+        <button onclick="changeInput()">+/-</button>
+        <button onclick="numberInput('0')">0</button>
+        <button onclick="numberInput('.')">.</button>
+        <button onclick="theResult()" class="equal">=</button>
+       </div>          
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
