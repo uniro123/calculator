@@ -1,40 +1,36 @@
-let inputnum =
-document.getElementById("inputnum");
-
-let displayValue = '';
-
-let resultDisplayed = false;
-let resultSquared = false;
+let inputnum = document.getElementById("inputnum");
 
 function numberInput(value) {
-    if (resultDisplayed) {
-                inputnum.value = "";
-                resultDisplayed = false;
-            }
-            inputnum.value += value;
+    inputnum.value += value;
 }
-function clearInput() {
-    inputnum.value = "";
-}
-function deleteInput() {
-    inputnum.value = inputnum.value.slice(0, -1);
-}
+
 function squaredInput() {
     inputnum.value = inputnum.value * inputnum.value;
 }
+
+function deleteInput() {
+    inputnum.value = inputnum.value.slice(0, -1);
+}
+
+function clearInput() {
+    inputnum.value = "";
+}
+
 function changeInput() {
-    if (displayValue.startsWith('-')) {
-        displayValue = displayValue.slice(1);
-    } else {
-        displayValue = '-' + displayValue;
+    if(inputnum.value.startsWith("-")) {
+        inputnum.value = inputnum.value.slice(1);
     }
-    document.getElementById('inputnum').value = displayValue;
+
+    else {
+        inputnum.value = "-" + inputnum.value;
+    }
 }
 function theResult() {
     try {
         inputnum.value = eval(inputnum.value);
-        resultDisplayed = true;
-    } catch (error) {
+    }
+
+    catch (error) {
         inputnum.value = "Error";
     }
 }
