@@ -17,9 +17,7 @@
 }
 
 .calcbox {
-background: darkred;
-    box-shadow: 6px 6px 13px gray,
-                6px 6px 13px rgba(0, 0, 0, .20);
+    background-image: linear-gradient(#00B4DB, #084c63);
     border-radius: 30px;
     padding: 16px;
     display: grid;
@@ -29,9 +27,7 @@ background: darkred;
 input {
     grid-column: span 4;
     height: 90px;
-    width: 264px;
-    box-shadow: inset -6px -6px 13px skyblue,
-                inset 6px 6px 13px rgba(0, 0, 0, .4);    
+    width: 263px; 
     background-color: skyblue;
     border: none;
     border-radius: 32px;
@@ -52,8 +48,6 @@ h1{
     font-family: monospace;
 }
 button {
-    box-shadow: inset 6px 6px 13px #fff,
-                6px 6px 13px rgba(0, 0, 0, .2);
     background-color: lightgray;
     border: none;
     border-radius: 50%;
@@ -64,25 +58,25 @@ button {
     font-size: 16px;
     color: gray;
 }
+button:hover{
+    color: skyblue;
+}
 button:active {
     color: white;
+    background-color: #ade8f4;
 }
 .equal{
     grid-column: span 4;
     width: 250px;
     border-radius: 40px;
-    box-shadow: inset 6px 6px 13px orange,
-                6px 6px 13px rgba(0, 0, 0, .16);
     background-color: orange;
 }
 #inputnum {
     color: gray;
 }
 .sign {
-    background-color: orange;
-    box-shadow: inset 6px 6px 13px orange,
-                6px 6px 13px rgba(0, 0, 0, .16);
+    background-color: orange; 
 }
 .sign1 {
-    color: orange 
+    color: orange;
 }
