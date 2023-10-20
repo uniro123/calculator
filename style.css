@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: monospace;
-    background-color: lightgray;
+    font-family: Monospace;
 }
 
 .container {
@@ -31,7 +30,6 @@ input {
     background-color: skyblue;
     border: none;
     border-radius: 32px;
-    color: rgb(26, 25, 25);
     text-align: end;
     margin: 20px 0px 20px 0px;
     padding: 20px;
@@ -45,7 +43,6 @@ h1{
     font-size: 15px;
     text-align: center;
     background: none;
-    font-family: monospace;
 }
 button {
     background-color: lightgray;
